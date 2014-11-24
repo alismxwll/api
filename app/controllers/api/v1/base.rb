@@ -5,6 +5,7 @@ module API
     class Base < Grape::API
       mount API::V1::Characters
       mount API::V1::Bookings
+      mount API::V1::Posts
       # mount API::V1::AnotherResource
 
       add_swagger_documentation(
